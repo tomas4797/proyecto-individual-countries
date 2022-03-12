@@ -1,5 +1,5 @@
 import React from "react";
-import { alphabeticalOrder } from "../../actions";
+import { alphabeticalOrder } from "../actions/index.js";
 import { useDispatch } from "react-redux";
 import Styles from "./AlphabeticalFilter.module.css";
 

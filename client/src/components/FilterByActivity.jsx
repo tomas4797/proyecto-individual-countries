@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { filterActivities } from "../../actions";
+import { filterActivities } from "../actions/index.js";
 import Styles from "./FilterByActivity.module.css";
 const FilterByActivity = ({ setCurrentPage }) => {
   const dispatch = useDispatch();

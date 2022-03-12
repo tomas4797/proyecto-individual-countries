@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { postNewActivity, getallActivities } from "../../actions";
+import { postNewActivity, getallActivities } from "../actions/index.js";
 import Styles from "./CreateActivity.module.css";
 
 const CreateActivity = () => {

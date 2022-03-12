@@ -1,5 +1,5 @@
 import React from "react";
-import { getDetailCountry } from "../../actions";
+import { getDetailCountry } from "../actions/index.js";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";

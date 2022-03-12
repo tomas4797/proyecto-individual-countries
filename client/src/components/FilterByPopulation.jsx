@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { filterCountriesByPopulation } from "../../actions";
+import { filterCountriesByPopulation } from "../actions/index.js";
 import Styles from "./FilterByPopulation.module.css";
 const FilterByPopulation = ({ setCurrentPage, setOrder }) => {
   const dispatch = useDispatch();

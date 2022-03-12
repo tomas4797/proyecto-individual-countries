@@ -5,7 +5,7 @@
   }
   
   .container {
-    background-image: url(Backgroung-Landing.jpg);
+    /* background-image: url(Backgroung-Landing.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;

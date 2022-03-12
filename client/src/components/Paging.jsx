@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./paging.module.css";
+import Styles from "./Paging.module.css";
 const Paging = ({ countriesPerPage, loadedCountries, paging }) => {
   const Numbers = [];
   for (let i = 0; i <= Math.ceil(loadedCountries / countriesPerPage); i++) {

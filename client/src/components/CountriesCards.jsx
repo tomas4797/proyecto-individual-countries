@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./CountriesCards.module.css";
-import CountryCard from "../CountryCard/CountryCard";
+import CountryCard from "./CountryCard";
 const CountriesCards = ({ currentCountries }) => {
   return (
     <div className={Styles.CountriesCards}>

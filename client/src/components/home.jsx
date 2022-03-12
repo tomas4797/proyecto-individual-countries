@@ -1,18 +1,18 @@
 import React from "react";
-import { getallCountries, getallActivities } from "../../actions";
+import { getallcountries, getallActivities } from "../actions/index.js";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import AlphabeticalFilter from "../AlphabeticalFilter/AlphabeticalFilter";
-import FilterByContinent from "../FilterByContinent/FilterByContinent";
-import FilterByPopulation from "../FilterByPopulation/FilterByPopulation";
-import FilterByActivity from "../FilterByActivity/FilterByActivity";
-import CountriesCards from "../CountriesCards/CountriesCards";
-import Paging from "../Paging/Paging";
-import SearchBar from "../searchBar/searchBar";
+import AlphabeticalFilter from "./AlphabeticalFilter";
+import FilterByContinent from "./FilterByContinent";
+import FilterByPopulation from "./FilterByPopulation";
+import FilterByActivity from "./FilterByActivity";
+import CountriesCards from "./CountriesCards";
+import Paging from "./Paging";
+import SearchBar from "./searchBar";
 import Styles from "./home.module.css";
-import ButtonCreateActivity from "../ButtonCreateActivity/ButtonCreateActivity";
-import ButtonReloadCountries from "../ButtonReloadCountries/ButtonReloadCountries";
+import ButtonCreateActivity from "./ButtonCreateActivity";
+import ButtonReloadCountries from "./ButtonReloadCountries";
 
 const Home = () => {
   ///////////local-states////////////////
@@ -40,14 +40,14 @@ const Home = () => {
   ///////////hooks////////////////////////
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getallCountries());
+    dispatch(getallcountries());
     dispatch(getallActivities());
   }, [dispatch]);
 
   /////////////Functions /////////////////////
   const handleClick = (e) => {
     e.preventDefault();
-    dispatch(getallCountries());
+    dispatch(getallcountries());
   };
   return (
     <div className={Styles.container}>
