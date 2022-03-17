@@ -5,6 +5,7 @@ const URLAPI = "https://restcountries.com/v3/all";
 const Carga_mi_db = async () => {
     try {
         const Infoapi = await axios.get(URLAPI);
+        console.log (Infoapi)
         const necessaryInfo = await Infoapi.data.map ((el) => {
             return {
                 id: el.cca3,
